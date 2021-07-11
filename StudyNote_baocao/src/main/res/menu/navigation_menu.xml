@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ChinhSuaTKB"
+        android:title="Thay đổi thời khóa biểu"/>
+
+    <item
+        android:id="@+id/ThemGhiChuTKB"
+        android:title="Thêm ghi chú Thời khóa biểu"/>
+
+    <item 
+        android:id="@+id/ThemGhiChuThoiGian"
+        android:title="Thêm ghi chú thời gian"/>
+
+    <item
+        android:id="@+id/XemGhiChu"
+        android:title="Xem ghi chú"/>
+
+</menu>

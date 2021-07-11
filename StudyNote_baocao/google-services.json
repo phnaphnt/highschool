@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "890938487552",
+    "firebase_url": "https://studynote-2ef77.firebaseio.com",
+    "project_id": "studynote-2ef77",
+    "storage_bucket": "studynote-2ef77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890938487552:android:6545dfa95b056af9",
+        "android_client_info": {
+          "package_name": "com.example.root.studynote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "890938487552-0irqi5rklsp5fki41k1itptu2hiiguu1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.root.studynote",
+            "certificate_hash": "02310d55abcaf38b91186c5590e1efba4c12de0c"
+          }
+        },
+        {
+          "client_id": "890938487552-21j1l006k0fvqo2v94ocr1jb2ke5ohas.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxJORRO3UegzQPk0XnORSFbPVfAr_wThs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "890938487552-21j1l006k0fvqo2v94ocr1jb2ke5ohas.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

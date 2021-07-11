@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#aeccd6">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="112dp"
+            android:layout_marginStart="112dp"
+            android:layout_marginTop="24dp"
+            android:text="ĐĂNG KÝ"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginLeft="84dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="24dp"
+            android:autofillHints="true"
+            android:ems="10"
+            android:hint="Họ và tên"
+            android:textColorHint="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="84dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="24dp"
+            android:autofillHints="true"
+            android:textColorHint="#000000"
+            android:ems="10"
+            android:hint="Số điện thoại"
+            android:inputType="phone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtName" />
+
+        <com.androidbuts.multispinnerfilter.SingleSpinnerSearch
+            android:id="@+id/SingleSpinnerDSLop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="28dp"
+            app:hintText="Lớp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtPhone"
+            tools:ignore="MissingConstraints"
+            android:layout_marginLeft="84dp" />
+
+        <EditText
+            android:id="@+id/edtPw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000000"
+            android:layout_marginLeft="84dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="true"
+            android:ems="10"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SingleSpinnerDSLop" />
+
+        <EditText
+            android:id="@+id/edtConfirmPw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="84dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#000000"
+            android:autofillHints="true"
+            android:ems="10"
+            android:hint="Xác nhận mật khẩu"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtPw" />
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="88dp"
+            android:drawableBottom="@drawable/btn"
+            app:layout_constraintBottom_toBottomOf="@+id/radioGroupLoai"
+            android:text="ĐĂNG KÝ"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtConfirmPw"
+            android:layout_marginLeft="148dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupLoai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="420dp"
+            app:layout_constraintBottom_toBottomOf="@id/edtConfirmPw"
+            android:orientation="horizontal"
+            android:paddingTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="92dp">
+
+            <RadioButton
+                android:id="@+id/radioBtnGV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Giáo viên"
+                android:textColor="#000000"/>
+
+            <RadioButton
+                android:id="@+id/radioBtnHS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Học sinh"
+                android:textColor="#000000"/>
+        </RadioGroup>
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
